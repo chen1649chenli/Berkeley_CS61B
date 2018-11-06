@@ -21,11 +21,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DebugExercise3.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DebugPractice/DebugExercise3.java">
+      <file leaf-file-name="IntList.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Intlist/IntList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="1220">
+              <caret line="111" column="21" lean-forward="true" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
+              <folding>
+                <element signature="e#3000#3001#0" expanded="true" />
+                <element signature="e#3028#3029#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntListTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Intlist/IntListTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -51,6 +64,7 @@
         <option value="$PROJECT_DIR$/DebugPractice/DebugExercise1.java" />
         <option value="$PROJECT_DIR$/DebugPractice/DebugExercise2.java" />
         <option value="$PROJECT_DIR$/DebugPractice/DebugExercise3.java" />
+        <option value="$PROJECT_DIR$/Intlist/IntList.java" />
       </list>
     </option>
   </component>
@@ -64,8 +78,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1122" />
-    <option name="y" value="80" />
+    <option name="x" value="40" />
+    <option name="y" value="39" />
     <option name="width" value="1400" />
     <option name="height" value="797" />
   </component>
@@ -88,6 +102,11 @@
               <item name="lab2" type="b2602c69:ProjectViewProjectNode" />
               <item name="lab2" type="462c0819:PsiDirectoryNode" />
               <item name="DebugPractice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lab2" type="462c0819:PsiDirectoryNode" />
+              <item name="Intlist" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -116,7 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DebugExercise3">
+  <component name="RunManager" selected="JUnit.IntListTest">
     <configuration name="DebugExercise1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DebugExercise1" />
       <module name="lab2" />
@@ -134,6 +153,23 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="IntListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="IntListTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -177,9 +213,11 @@
       <item itemvalue="Application.DebugExercise1" />
       <item itemvalue="Application.DebugExercise2" />
       <item itemvalue="Application.DebugExercise3" />
+      <item itemvalue="JUnit.IntListTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IntListTest" />
         <item itemvalue="Application.DebugExercise3" />
         <item itemvalue="Application.DebugExercise2" />
         <item itemvalue="Application.DebugExercise1" />
@@ -196,15 +234,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541434268570</updated>
-      <workItem from="1541434270529" duration="5092000" />
+      <workItem from="1541434270529" duration="13774000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="IntListTest - 2018.11.06 at 10h 09m 35s.xml">
+      <configuration name="IntListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntListTest - 2018.11.06 at 10h 15m 11s.xml">
+      <configuration name="IntListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntListTest - 2018.11.06 at 11h 04m 41s.xml">
+      <configuration name="IntListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntListTest - 2018.11.06 at 11h 04m 49s.xml">
+      <configuration name="IntListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntListTest - 2018.11.06 at 11h 05m 39s.xml">
+      <configuration name="IntListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntListTest - 2018.11.06 at 11h 07m 05s.xml">
+      <configuration name="IntListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntListTest - 2018.11.06 at 11h 09m 49s.xml">
+      <configuration name="IntListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntListTest - 2018.11.06 at 11h 13m 05s.xml">
+      <configuration name="IntListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntListTest - 2018.11.06 at 11h 13m 24s.xml">
+      <configuration name="IntListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntListTest - 2018.11.06 at 11h 14m 24s.xml">
+      <configuration name="IntListTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5092000" />
+    <option name="totallyTimeSpent" value="13774000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1122" y="80" width="1400" height="797" extended-state="0" />
+    <frame x="40" y="39" width="1400" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -216,7 +286,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35428572" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Style Checker" />
       <window_info anchor="bottom" id="Terminal" />
@@ -246,7 +316,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -293,8 +363,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DebugPractice/DebugExercise3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        <state relative-caret-position="323">
+          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Intlist/IntListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Intlist/IntList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1220">
+          <caret line="111" column="21" lean-forward="true" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
+          <folding>
+            <element signature="e#3000#3001#0" expanded="true" />
+            <element signature="e#3028#3029#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

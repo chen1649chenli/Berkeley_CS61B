@@ -21,24 +21,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IntList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Intlist/IntList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1220">
-              <caret line="111" column="21" lean-forward="true" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
+            <state relative-caret-position="234">
+              <caret line="89" column="16" lean-forward="true" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
               <folding>
-                <element signature="e#3000#3001#0" expanded="true" />
-                <element signature="e#3028#3029#0" expanded="true" />
+                <element signature="e#3261#3262#0" expanded="true" />
+                <element signature="e#3289#3290#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntListTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IntListTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Intlist/IntListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+            <state relative-caret-position="133">
+              <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -65,6 +65,7 @@
         <option value="$PROJECT_DIR$/DebugPractice/DebugExercise2.java" />
         <option value="$PROJECT_DIR$/DebugPractice/DebugExercise3.java" />
         <option value="$PROJECT_DIR$/Intlist/IntList.java" />
+        <option value="$PROJECT_DIR$/Intlist/IntListTest.java" />
       </list>
     </option>
   </component>
@@ -234,44 +235,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541434268570</updated>
-      <workItem from="1541434270529" duration="14023000" />
+      <workItem from="1541434270529" duration="16613000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IntListTest - 2018.11.06 at 10h 09m 35s.xml">
+    <history-entry file="IntListTest - 2018.11.06 at 11h 42m 49s.xml">
       <configuration name="IntListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntListTest - 2018.11.06 at 10h 15m 11s.xml">
+    <history-entry file="IntListTest - 2018.11.06 at 11h 44m 53s.xml">
       <configuration name="IntListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntListTest - 2018.11.06 at 11h 04m 41s.xml">
+    <history-entry file="IntListTest - 2018.11.06 at 11h 47m 26s.xml">
       <configuration name="IntListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntListTest - 2018.11.06 at 11h 04m 49s.xml">
+    <history-entry file="IntListTest - 2018.11.06 at 11h 47m 45s.xml">
       <configuration name="IntListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntListTest - 2018.11.06 at 11h 05m 39s.xml">
+    <history-entry file="IntListTest - 2018.11.06 at 11h 49m 31s.xml">
       <configuration name="IntListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntListTest - 2018.11.06 at 11h 07m 05s.xml">
+    <history-entry file="IntListTest - 2018.11.06 at 11h 57m 42s.xml">
       <configuration name="IntListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntListTest - 2018.11.06 at 11h 09m 49s.xml">
+    <history-entry file="IntListTest - 2018.11.06 at 11h 57m 51s.xml">
       <configuration name="IntListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntListTest - 2018.11.06 at 11h 13m 05s.xml">
+    <history-entry file="IntListTest - 2018.11.06 at 11h 59m 23s.xml">
       <configuration name="IntListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntListTest - 2018.11.06 at 11h 13m 24s.xml">
+    <history-entry file="IntListTest - 2018.11.06 at 12h 16m 57s.xml">
       <configuration name="IntListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntListTest - 2018.11.06 at 11h 14m 24s.xml">
+    <history-entry file="IntListTest - 2018.11.06 at 12h 20m 44s.xml">
       <configuration name="IntListTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14023000" />
+    <option name="totallyTimeSpent" value="16613000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="39" width="1400" height="797" extended-state="0" />
@@ -316,7 +317,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -343,17 +344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../library-sp18/javalib/stdlib.jar!/In.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="278" selection-start-line="278" selection-end-line="278" />
-          <folding>
-            <element signature="e#8727#8728#0" expanded="true" />
-            <element signature="e#8768#8769#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DebugPractice/foods.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -368,21 +358,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Intlist/IntListTest.java">
+    <entry file="jar://$PROJECT_DIR$/../library-sp18/javalib/stdlib.jar!/In.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+        <state relative-caret-position="204">
+          <caret line="278" selection-start-line="278" selection-end-line="278" />
+          <folding>
+            <element signature="e#8727#8728#0" expanded="true" />
+            <element signature="e#8768#8769#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Intlist/IntList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1220">
-          <caret line="111" column="21" lean-forward="true" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
+        <state relative-caret-position="234">
+          <caret line="89" column="16" lean-forward="true" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
           <folding>
-            <element signature="e#3000#3001#0" expanded="true" />
-            <element signature="e#3028#3029#0" expanded="true" />
+            <element signature="e#3261#3262#0" expanded="true" />
+            <element signature="e#3289#3290#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Intlist/IntListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
         </state>
       </provider>
     </entry>

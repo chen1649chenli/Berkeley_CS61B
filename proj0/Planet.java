@@ -112,4 +112,12 @@ public class Planet {
         xxPos += xxVel * dt;
         yyPos += yyVel * dt;
     }
+
+    /**
+     * Draw the planet on the screen
+     */
+    public void draw() {
+        String dir = "images/";
+        StdDraw.picture(xxPos, yyPos, dir + imgFileName);
+    }
 }

@@ -106,4 +106,30 @@ public class ArrayDequeTest {
 
         Assert.assertEquals(3, i);
     }
+    @Test
+    public void get2() {
+        ArrayDeque<Integer> array1 = new ArrayDeque<>();
+        array1.addFirst(0);
+        array1.addFirst(1);
+        array1.addLast(2);
+        array1.get(1);
+        array1.get(1);
+        array1.addLast(5);
+        array1.addLast(6);
+        array1.addFirst(7);
+        array1.get(2);
+        array1.addLast(9);
+        array1.removeFirst();
+        array1.addLast(11);
+        array1.get(0);
+        array1.removeFirst();
+        array1.removeFirst();
+        array1.removeLast();
+        array1.get(3);
+        array1.get(3);
+        array1.removeLast();
+        array1.removeFirst();
+        int i = array1.removeLast();
+        Assert.assertEquals(3, i);
+    }
 }

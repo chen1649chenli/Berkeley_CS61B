@@ -21,7 +21,7 @@ public class ArrayDeque<T> {
         }
         Item[nextFirst] = item;
         size = size + 1;
-        nextFirst = nextFirst - 1;
+        increaseNextFirst();
     }
 
     public void addLast(T item) {
@@ -30,7 +30,7 @@ public class ArrayDeque<T> {
         }
         Item[nextLast] = item;
         size = size + 1;
-        nextLast = nextLast + 1;
+        increaseNextLast();
 
     }
 
@@ -55,7 +55,7 @@ public class ArrayDeque<T> {
     }
 
     public T get(int index) {
-        return Item[0];
+        return Item[index];
     }
 
     private boolean needIncreaseSize() {
@@ -68,10 +68,12 @@ public class ArrayDeque<T> {
 
     private void increaseSize() {
         if (nextFirst < nextLast) {
+            /* Adds new space to the end of the array */
             T[] newItems = (T[]) new Object[Item.length * factor];
             System.arraycopy(Item, 0, newItems, 0, Item.length);
             Item = newItems;
         } else {
+            /* Adds new space to the middle of the front and next postion */
             T[] newItems = (T[]) new Object[Item.length * factor];
             System.arraycopy(Item, 0, newItems, 0, nextLast);
             System.arraycopy(Item, nextFirst, newItems,
@@ -87,7 +89,20 @@ public class ArrayDeque<T> {
             int frontToBeRemoved = nextFirst;
             int backToBeRemoved = toBeRemove - frontToBeRemoved;
         }
+    }
 
+    private void increaseNextFirst() {
+        nextFirst = nextFirst - 1;
+        if (nextFirst < 0) {
+            nextFirst = nextFirst + Item.length;
+        }
+    }
+
+    private void increaseNextLast() {
+        nextLast = nextLast + 1;
+        if (nextLast == Item.length) {
+            nextLast = nextLast - Item.length;
+        }
     }
 
 }

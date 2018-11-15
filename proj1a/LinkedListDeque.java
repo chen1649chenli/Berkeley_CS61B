@@ -130,7 +130,7 @@ public class LinkedListDeque <T> {
     /**
      * Gets the item at the given index using recursion
      */
-    public T getRevursive(int index) {
+    public T getRecursive(int index) {
         if (index >= size || index < 0 || isEmpty()) {
             return null;
         }

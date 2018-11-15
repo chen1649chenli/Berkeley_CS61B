@@ -126,7 +126,7 @@ public class ArrayDeque<T> {
         if (nextFirst < nextLast || nextLast == 0) {
             T[] newplaceholders = (T[]) new Object[placeholder.length - toBeRemove];
             //int frontToBeRemoved = (nextFirst + 1) % placeholder.length;
-            System.arraycopy(placeholder, nextFirst, newplaceholders, 0, size + 2);
+            System.arraycopy(placeholder, nextFirst, newplaceholders, 0, size + 1);
             /*Sets the new values for nextFirst and nextLast */
             nextFirst = 0;
             nextLast = size + 1;

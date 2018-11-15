@@ -1,14 +1,14 @@
-public class LinkedListDeque <T> {
+public class LinkedListDeque<T> {
 
     private class Node {
-        public T item;
-        public Node prev;
-        public Node next;
+        private T item;
+        private Node prev;
+        private Node next;
 
         /**
          * Constructor of Node class
          */
-        public Node(T i, Node p, Node n){
+        public Node(T i, Node p, Node n) {
             prev = p;
             next = n;
             item = i;
@@ -29,21 +29,11 @@ public class LinkedListDeque <T> {
     }
 
     /**
-     * Construct a LinkedListDeque
-     */
-    public LinkedListDeque(T item) {
-        sentinel = new Node(null, null, null);
-        sentinel.next = new Node(item, sentinel, sentinel);
-        sentinel.prev = sentinel.next;
-        size = 1;
-    }
-
-    /**
      * Adds an item of type T to the front of the queue
      * @param item
      */
     public void addFirst(T item) {
-        sentinel.next = new Node (item, sentinel, sentinel.next);
+        sentinel.next = new Node(item, sentinel, sentinel.next);
         sentinel.next.next.prev = sentinel.next;
         size++;
     }
@@ -87,7 +77,7 @@ public class LinkedListDeque <T> {
             return null;
         }
         /* Gets the last item */
-        Node lastitem = sentinel.prev;;
+        Node lastitem = sentinel.prev;
         /* Removes the last item */
         sentinel.prev.prev.next = sentinel;
         sentinel.prev = sentinel.prev.prev;
@@ -118,7 +108,7 @@ public class LinkedListDeque <T> {
      * Gets the item at the given index
      */
     public T get(int index) {
-        if (index >= size || index < 0 ||isEmpty()) {
+        if (index >= size || index < 0 || isEmpty()) {
             return null;
         }
         Node ptr = sentinel;
@@ -135,7 +125,7 @@ public class LinkedListDeque <T> {
             return null;
         }
         Node ptr = sentinel.next;
-        return recursiveHelper(index,ptr);
+        return recursiveHelper(index, ptr);
     }
 
     /**

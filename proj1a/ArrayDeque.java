@@ -56,24 +56,26 @@ public class ArrayDeque<T> {
         if (size == 0) {
             return null;
         }
+        T stuff = getFirst();
         size = size - 1;
         decreaseNextFirst();
         if (needDecreaseSize()) {
             decreaseSize();
         }
-        return Item[nextFirst];
+        return stuff;
     }
 
     public T removeLast() {
         if (size == 0) {
             return null;
         }
+        T stuff = getLast();
         size = size - 1;
         decreaseNextLast();
         if (needDecreaseSize()) {
             decreaseSize();
         }
-        return Item[nextLast];
+        return stuff;
     }
 
     public T get(int index) {
@@ -170,6 +172,23 @@ public class ArrayDeque<T> {
         if (nextLast < 0) {
             nextLast = nextLast + Item.length;
         }
+    }
+
+    private T getFirst() {
+        if (nextFirst == Item.length - 1) {
+            return Item[0];
+        } else {
+            return Item[nextFirst + 1];
+        }
+    }
+
+    private T getLast() {
+        if (nextLast == 0) {
+            return Item[Item.length - 1];
+        } else {
+            return Item[nextLast - 1];
+        }
+
     }
 
 }

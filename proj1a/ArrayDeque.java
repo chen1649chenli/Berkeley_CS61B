@@ -43,19 +43,45 @@ public class ArrayDeque<T> {
     }
 
     public void printDeque() {
-
+        for (int i = 0; i < size; i++) {
+            int pos = nextFirst + i + 1;
+            if (pos > Item.length - 1) {
+                pos = pos - Item.length;
+            }
+            System.out.print(Item[pos] + " ");
+        }
     }
 
     public T removeFirst() {
-        return Item[0];
+        if (size == 0) {
+            return null;
+        }
+        size = size - 1;
+        decreaseNextFirst();
+        if (needDecreaseSize()) {
+            decreaseSize();
+        }
+        return Item[nextFirst];
     }
 
     public T removeLast() {
-        return Item[0];
+        if (size == 0) {
+            return null;
+        }
+        size = size - 1;
+        decreaseNextLast();
+        if (needDecreaseSize()) {
+            decreaseSize();
+        }
+        return Item[nextLast];
     }
 
     public T get(int index) {
-        return Item[index];
+        int pos = nextFirst + index + 1;
+        if (pos >= Item.length) {
+            pos = pos - Item.length;
+        }
+        return Item[pos];
     }
 
     private boolean needIncreaseSize() {
@@ -72,7 +98,17 @@ public class ArrayDeque<T> {
             T[] newItems = (T[]) new Object[Item.length * factor];
             System.arraycopy(Item, 0, newItems, 0, Item.length);
             Item = newItems;
-        } else {
+        } else if(nextFirst == Item.length -1){
+            T[] newItems = (T[]) new Object[Item.length * factor];
+            System.arraycopy(Item, 0, newItems, 0, Item.length);
+            nextFirst = newItems.length -1;
+            Item = newItems;
+        }else if (nextLast == 0) {
+            T[] newItems = (T[]) new Object[Item.length * factor];
+            System.arraycopy(Item, 0, newItems, 0, Item.length);
+            nextLast = Item.length;
+            Item = newItems;
+        }else {
             /* Adds new space to the middle of the front and next postion */
             T[] newItems = (T[]) new Object[Item.length * factor];
             System.arraycopy(Item, 0, newItems, 0, nextLast);
@@ -85,9 +121,26 @@ public class ArrayDeque<T> {
 
     private void decreaseSize() {
         int toBeRemove = Item.length / 2;
-        if (nextFirst < nextLast) {
-            int frontToBeRemoved = nextFirst;
-            int backToBeRemoved = toBeRemove - frontToBeRemoved;
+        if (nextFirst < nextLast || nextLast == 0) {
+            T[] newItems = (T[]) new Object[Item.length - toBeRemove];
+            //int frontToBeRemoved = (nextFirst + 1) % Item.length;
+            System.arraycopy(Item, nextFirst, newItems, 0, size);
+            /*Sets the new values for nextFirst and nextLast */
+            nextFirst= 0;
+            nextLast = size + 1;
+            Item = newItems;
+        } else if (nextFirst == Item.length - 1){
+            T[] newItems = (T[]) new Object[Item.length - toBeRemove];
+            System.arraycopy(Item, 0, newItems, 0, size);
+            Item = newItems;
+        } else {
+            T[] newItems = (T[]) new Object[Item.length - toBeRemove];
+            int firstPos = newItems.length - (Item.length - nextFirst - 1);
+            int firstlen = Item.length - nextFirst - 1;
+            System.arraycopy(Item, 0, newItems, 0, nextLast);
+            System.arraycopy(Item, nextFirst + 1, newItems, firstPos, firstlen);
+            nextFirst = firstPos - 1;
+            Item = newItems;
         }
     }
 
@@ -102,6 +155,20 @@ public class ArrayDeque<T> {
         nextLast = nextLast + 1;
         if (nextLast == Item.length) {
             nextLast = nextLast - Item.length;
+        }
+    }
+
+    private void decreaseNextFirst() {
+        nextFirst = nextFirst + 1;
+        if (nextFirst == Item.length) {
+            nextFirst = 0;
+        }
+    }
+
+    private void decreaseNextLast() {
+        nextLast = nextLast - 1;
+        if (nextLast < 0) {
+            nextLast = nextLast + Item.length;
         }
     }
 

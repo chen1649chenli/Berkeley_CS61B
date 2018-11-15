@@ -23,8 +23,8 @@ public class LinkedListDeque <T> {
      */
     public LinkedListDeque() {
         sentinel = new Node(null, null, null);
-        sentinel.prev = null;
-        sentinel.next = null;
+        sentinel.prev = sentinel;
+        sentinel.next = sentinel;
         size = 0;
     }
 
@@ -156,8 +156,10 @@ public class LinkedListDeque <T> {
         if (isEmpty()) {
             return;
         }
-        for (Node p = sentinel.next; p.next != null; p = p.next) {
-            System.out.print(p.item + " ");
+        Node ptr = sentinel.next;
+        for (int i = 0; i < size; i++) {
+            System.out.print(ptr.item + " ");
+            ptr = ptr.next;
         }
         System.out.println();
     }

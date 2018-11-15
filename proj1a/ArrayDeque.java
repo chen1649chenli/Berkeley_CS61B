@@ -134,6 +134,7 @@ public class ArrayDeque<T> {
         } else if (nextFirst == placeholder.length - 1) {
             T[] newplaceholders = (T[]) new Object[placeholder.length - toBeRemove];
             System.arraycopy(placeholder, 0, newplaceholders, 0, size);
+            nextFirst = newplaceholders.length - 1;
             placeholder = newplaceholders;
         } else {
             T[] newplaceholders = (T[]) new Object[placeholder.length - toBeRemove];

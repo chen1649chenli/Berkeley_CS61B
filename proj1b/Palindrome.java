@@ -6,4 +6,8 @@ public class Palindrome {
         }
         return characterDeque;
     }
+
+    public boolean isPalindrome (String word) {
+        return true;
+    }
 }

@@ -12,12 +12,34 @@ public class Palindrome {
         return recursiveHelper(placeholder);
     }
 
-    private boolean recursiveHelper(Deque<Character> item) {
+    public boolean isPalindrome (String word, CharacterComparator cc) {
+        Deque<Character> placeholder = wordToDeque(word);
+        return recursiveHelper2(placeholder, cc);
+    }
+
+    /** Helper method for isPalindrome (String word) */
+    private boolean recursiveHelper (Deque<Character> item) {
         if (item.size() <=1) {
             return true;
         }
         if(item.removeFirst() == item.removeLast()) {
             return recursiveHelper(item);
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Helper method for isPalindrome (String word, CharacterComparator cc)
+     */
+    private boolean recursiveHelper2 (Deque<Character> item, CharacterComparator cc) {
+        if (item.size() <=1) {
+            return true;
+        }
+        Character i = item.removeFirst();
+        Character j = item.removeLast();
+        if (cc.equalChars(i, j)) {
+            return recursiveHelper2(item, cc);
         } else {
             return false;
         }

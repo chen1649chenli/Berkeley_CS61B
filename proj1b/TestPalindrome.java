@@ -43,4 +43,13 @@ public class TestPalindrome {
         assertTrue(palindrome.isPalindrome(s4));
         assertTrue(palindrome.isPalindrome(s5));
     }
+    /** Tests the isPalindrome method that uses OffByOne class */
+    @Test
+    public void testPalindrome3() {
+        CharacterComparator cc = new OffByOne();
+        String s1 = "flake";
+        String s2 = "abcdedcba";
+        assertTrue(palindrome.isPalindrome(s1, cc));
+        assertFalse(palindrome.isPalindrome(s2, cc));
+    }
 }

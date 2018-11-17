@@ -32,6 +32,7 @@ public class LinkedListDeque<T> implements Deque<T> {
      * Adds an item of type T to the front of the queue
      * @param item
      */
+    @Override
     public void addFirst(T item) {
         sentinel.next = new Node(item, sentinel, sentinel.next);
         sentinel.next.next.prev = sentinel.next;
@@ -42,6 +43,7 @@ public class LinkedListDeque<T> implements Deque<T> {
      * Removes and returns the item at the front of the deque.
      * If no such item exists, return null.
      */
+    @Override
     public T removeFirst() {
         if (isEmpty()) {
             return null;
@@ -62,6 +64,7 @@ public class LinkedListDeque<T> implements Deque<T> {
      * Adds an item of type T to the end of the queue
      * @param item
      */
+    @Override
     public void addLast(T item) {
         sentinel.prev = new Node(item, sentinel.prev, sentinel);
         sentinel.prev.prev.next = sentinel.prev;
@@ -72,6 +75,7 @@ public class LinkedListDeque<T> implements Deque<T> {
      * Removes and returns the item at the end of the deque.
      * If no such item exists, return null.
      */
+    @Override
     public T removeLast() {
         if (isEmpty()) {
             return null;
@@ -92,6 +96,7 @@ public class LinkedListDeque<T> implements Deque<T> {
      * Returns true if deque is empty, false otherwise.
      * @return
      */
+    @Override
     public boolean isEmpty() {
         return (size == 0);
     }
@@ -100,6 +105,7 @@ public class LinkedListDeque<T> implements Deque<T> {
      * Returns the number of items in the deque
      * @return
      */
+    @Override
     public int size() {
         return size;
     }
@@ -107,6 +113,7 @@ public class LinkedListDeque<T> implements Deque<T> {
     /**
      * Gets the item at the given index
      */
+    @Override
     public T get(int index) {
         if (index >= size || index < 0 || isEmpty()) {
             return null;
@@ -120,6 +127,7 @@ public class LinkedListDeque<T> implements Deque<T> {
     /**
      * Gets the item at the given index using recursion
      */
+    @Override
     public T getRecursive(int index) {
         if (index >= size || index < 0 || isEmpty()) {
             return null;
@@ -142,6 +150,7 @@ public class LinkedListDeque<T> implements Deque<T> {
      * Prints the items in the deque from first to last.
      * Seperated by a space
      */
+    @Override
     public void printDeque() {
         if (isEmpty()) {
             return;
@@ -153,5 +162,4 @@ public class LinkedListDeque<T> implements Deque<T> {
         }
         System.out.println();
     }
-
 }

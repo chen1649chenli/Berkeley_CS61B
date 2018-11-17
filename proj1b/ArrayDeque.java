@@ -14,7 +14,7 @@ public class ArrayDeque<T> implements Deque<T> {
         factor = 2;
     }
 
-
+    @Override
     public void addFirst(T item) {
         if (needIncreaseSize()) {
             increaseSize();
@@ -23,7 +23,7 @@ public class ArrayDeque<T> implements Deque<T> {
         size = size + 1;
         increaseNextFirst();
     }
-
+    @Override
     public void addLast(T item) {
         if (needIncreaseSize()) {
             increaseSize();
@@ -33,15 +33,17 @@ public class ArrayDeque<T> implements Deque<T> {
         increaseNextLast();
 
     }
-
+    @Override
     public boolean isEmpty() {
         return (size == 0);
     }
 
+    @Override
     public int size() {
         return size;
     }
 
+    @Override
     public void printDeque() {
         for (int i = 0; i < size; i++) {
             int pos = nextFirst + i + 1;
@@ -51,7 +53,7 @@ public class ArrayDeque<T> implements Deque<T> {
             System.out.print(placeholder[pos] + " ");
         }
     }
-
+    @Override
     public T removeFirst() {
         if (size == 0) {
             return null;
@@ -64,7 +66,7 @@ public class ArrayDeque<T> implements Deque<T> {
         }
         return stuff;
     }
-
+    @Override
     public T removeLast() {
         if (size == 0) {
             return null;
@@ -77,7 +79,7 @@ public class ArrayDeque<T> implements Deque<T> {
         }
         return stuff;
     }
-
+    @Override
     public T get(int index) {
         int pos = nextFirst + index + 1;
         if (pos >= placeholder.length) {
@@ -85,7 +87,7 @@ public class ArrayDeque<T> implements Deque<T> {
         }
         return placeholder[pos];
     }
-
+    @Override
     public T getRecursive(int index) {
         int pos = nextFirst + index + 1;
         if (pos >= placeholder.length) {

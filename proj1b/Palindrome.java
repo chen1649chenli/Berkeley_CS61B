@@ -8,6 +8,18 @@ public class Palindrome {
     }
 
     public boolean isPalindrome (String word) {
-        return true;
+        Deque<Character> placeholder = wordToDeque(word);
+        return recursiveHelper(placeholder);
+    }
+
+    private boolean recursiveHelper(Deque<Character> item) {
+        if (item.size() <=1) {
+            return true;
+        }
+        if(item.removeFirst() == item.removeLast()) {
+            return recursiveHelper(item);
+        } else {
+            return false;
+        }
     }
 }

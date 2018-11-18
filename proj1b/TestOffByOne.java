@@ -15,8 +15,8 @@ public class TestOffByOne {
         Character b1 = 'b';
         assertTrue(offByOne.equalChars(a1, b1));
 
-        Character a2 = 'y';
-        Character b2 = 'x';
+        Character a2 = 'Y';
+        Character b2 = 'X';
         assertTrue(offByOne.equalChars(a2, b2));
 
         Character a3 = '&';
@@ -34,5 +34,10 @@ public class TestOffByOne {
         Character a6 = 'a';
         Character b6 = 'z';
         assertFalse(offByOne.equalChars(a6, b6));
+
+        Character a7 = 'A';
+        Character b7 = 'C';
+        assertFalse(offByOne.equalChars(a7, b7));
+
     }
 }

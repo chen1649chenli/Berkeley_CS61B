@@ -1,34 +1,34 @@
-public class SLList<placeholder> {
+public class SLList<placeholder> implements List61B<placeholder> {
 
-    private class IntNode {
+    private class Node {
         public placeholder item;
-        public IntNode next;
+        public Node next;
 
-        public IntNode(placeholder i, IntNode n) {
+        public Node(placeholder i, Node n) {
             item = i;
             next = n;
         }
     }
 
-    private IntNode sentinel;
+    private Node sentinel;
     private int size;
 
     /**
      * Constructs an empty SLList
      */
     public SLList() {
-        sentinel = new IntNode(null, null);
+        sentinel = new Node(null, null);
         size = 0;
     }
 
     public SLList (placeholder x){
-        sentinel = new IntNode(null, null);
-        sentinel.next = new IntNode(x, null);
+        sentinel = new Node(null, null);
+        sentinel.next = new Node(x, null);
         size = 1;
     }
 
     public void addFirst(placeholder num) {
-       sentinel.next =  new IntNode(num, sentinel.next);
+       sentinel.next =  new Node(num, sentinel.next);
        size = size + 1;
     }
 
@@ -40,11 +40,11 @@ public class SLList<placeholder> {
      * Adds an item to the end of the list
      */
     public void addLast(placeholder x) {
-        IntNode ptr = sentinel;
+        Node ptr = sentinel;
         while (ptr.next != null) {
             ptr = ptr.next;
         }
-        ptr.next = new IntNode(x, null);
+        ptr.next = new Node(x, null);
         size = size + 1;
     }
 
@@ -56,6 +56,78 @@ public class SLList<placeholder> {
     public int size() {
         return size;
 
+    }
+
+    public void insert(placeholder item, int position) {
+        if (sentinel.next == null || position == 0) {
+            addFirst(item);
+            return;
+        }
+
+        Node currentNode = sentinel.next.next;
+        while (position > 1 && currentNode.next != null) {
+            position -= 1;
+            currentNode = currentNode.next;
+        }
+
+        Node newNode = new Node(item, currentNode.next);
+        currentNode.next = newNode;
+
+    }
+    /** Returns the back node of our list. */
+    private Node getLastNode() {
+        Node p = sentinel;
+
+        /* Move p until it reaches the end. */
+        while (p.next != null) {
+            p = p.next;
+        }
+        return p;
+    }
+
+    public placeholder removeLast() {
+        Node back = getLastNode();
+        if (back == sentinel) {
+            return null;
+        }
+
+        Node p = sentinel;
+
+        while (p.next != back) {
+            p = p.next;
+        }
+        p.next = null;
+        return back.item;
+
+    }
+
+    public placeholder get(int position) {
+        if (position == 0) {
+            return getFirst();
+        }
+        Node currentNode = sentinel.next.next;
+        while (position > 1 && currentNode.next != null) {
+            position -= 1;
+            currentNode = currentNode.next;
+        }
+
+        return currentNode.item;
+
+    }
+
+    public placeholder getLast(){
+        Node back = getLastNode();
+        return back.item;
+
+    }
+
+    @Override
+    public void print() {
+        System.out.print("This is a override method. \n");
+        for (Node p = sentinel.next; p != null; p = p.next) {
+            System.out.print(p.item + " ");
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {

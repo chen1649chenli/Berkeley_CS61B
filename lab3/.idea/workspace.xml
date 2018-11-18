@@ -12,31 +12,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IntList.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IntList/IntList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="122" column="32" lean-forward="true" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
-              <folding>
-                <element signature="e#3529#3530#0" expanded="true" />
-                <element signature="e#3557#3558#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IntListTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IntList/IntListTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="86" column="52" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HorribleSteve.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flik/HorribleSteve.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,14 +21,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Flik.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestFlik.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flik/TestFlik.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Flik.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Flik/Flik.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="153">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding>
                 <element signature="e#135#136#0" expanded="true" />
                 <element signature="e#164#165#0" expanded="true" />
+                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#235#236#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,12 +50,22 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Arithmetic/Arithmetic.java" />
-        <option value="$PROJECT_DIR$/IntList/IntListTest.java" />
         <option value="$PROJECT_DIR$/IntList/IntList.java" />
+        <option value="$PROJECT_DIR$/IntList/IntListTest.java" />
+        <option value="$PROJECT_DIR$/Flik/HorribleSteve.java" />
+        <option value="$PROJECT_DIR$/Flik/TestFlik.java" />
+        <option value="$PROJECT_DIR$/Flik/Flik.java" />
       </list>
     </option>
   </component>
@@ -96,6 +95,11 @@
             <path>
               <item name="lab3" type="b2602c69:ProjectViewProjectNode" />
               <item name="lab3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lab3" type="462c0819:PsiDirectoryNode" />
+              <item name="Flik" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lab3" type="b2602c69:ProjectViewProjectNode" />
@@ -136,7 +140,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HorribleSteve">
+  <component name="RunManager" selected="Application.Flik">
+    <configuration name="Flik" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Flik" />
+      <module name="lab3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
     <configuration name="HorribleSteve" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HorribleSteve" />
       <module name="lab3" />
@@ -144,23 +153,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="ArithmeticTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab3" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ArithmeticTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="IntListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab3" />
@@ -187,6 +179,23 @@
       <option name="MAIN_CLASS_NAME" value="IntListTest" />
       <option name="METHOD_NAME" value="testReverse" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestFlik" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab3" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestFlik" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -235,17 +244,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ArithmeticTest" />
       <item itemvalue="JUnit.IntListTest" />
       <item itemvalue="JUnit.IntListTest.testReverse" />
       <item itemvalue="Application.HorribleSteve" />
+      <item itemvalue="JUnit.TestFlik" />
+      <item itemvalue="Application.Flik" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Flik" />
+        <item itemvalue="JUnit.TestFlik" />
         <item itemvalue="Application.HorribleSteve" />
         <item itemvalue="JUnit.IntListTest" />
         <item itemvalue="JUnit.IntListTest.testReverse" />
-        <item itemvalue="JUnit.ArithmeticTest" />
       </list>
     </recent_temporary>
   </component>
@@ -260,20 +271,11 @@
       <option name="presentableId" value="Default" />
       <updated>1541890779500</updated>
       <workItem from="1541890780863" duration="388000" />
-      <workItem from="1541891392084" duration="11454000" />
+      <workItem from="1541891392084" duration="12873000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IntListTest - 2018.11.10 at 21h 08m 09s.xml">
-      <configuration name="IntListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IntListTest - 2018.11.10 at 21h 18m 41s.xml">
-      <configuration name="IntListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IntListTest - 2018.11.10 at 21h 18m 44s.xml">
-      <configuration name="IntListTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="IntListTest - 2018.11.10 at 21h 18m 54s.xml">
       <configuration name="IntListTest" configurationId="JUnit" />
     </history-entry>
@@ -295,9 +297,18 @@
     <history-entry file="IntListTest - 2018.11.10 at 21h 37m 37s.xml">
       <configuration name="IntListTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="IntListTest - 2018.11.10 at 21h 51m 35s.xml">
+      <configuration name="IntListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFlik - 2018.11.10 at 22h 01m 01s.xml">
+      <configuration name="TestFlik" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFlik - 2018.11.10 at 22h 01m 36s.xml">
+      <configuration name="TestFlik" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11842000" />
+    <option name="totallyTimeSpent" value="13261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1135" y="50" width="1400" height="809" extended-state="0" />
@@ -312,19 +323,19 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.18398876" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4536517" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Style Checker" order="7" visible="true" weight="0.3286517" />
+      <window_info anchor="bottom" id="Style Checker" order="7" weight="0.3286517" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496318" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496318" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.22893259" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.48876405" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -342,8 +353,31 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="i == 127" language="JAVA" />
+          <url>file://$PROJECT_DIR$/Flik/HorribleSteve.java</url>
+          <line>4</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="10" />
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>i == 127</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i != j</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Arithmetic/Arithmetic.java">
@@ -393,23 +427,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IntList/IntListTest.java">
+    <entry file="file://$PROJECT_DIR$/IntList/IntList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="86" column="52" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
+        <state relative-caret-position="64">
+          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3529#3530#0" expanded="true" />
+            <element signature="e#3557#3558#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flik/Flik.java">
+    <entry file="file://$PROJECT_DIR$/IntList/IntListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="478">
+          <caret line="89" column="65" lean-forward="true" selection-start-line="89" selection-start-column="65" selection-end-line="89" selection-end-column="65" />
           <folding>
-            <element signature="e#135#136#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -421,13 +455,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IntList/IntList.java">
+    <entry file="file://$PROJECT_DIR$/Flik/TestFlik.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="122" column="32" lean-forward="true" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
+        <state relative-caret-position="240">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
-            <element signature="e#3529#3530#0" expanded="true" />
-            <element signature="e#3557#3558#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flik/Flik.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#135#136#0" expanded="true" />
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -84,7 +84,7 @@ public class IntListTest {
         assertEquals(exp, IntList.reverse(A));
 
         /* Test destructive */
-        assertNotEquals(IntList.of(1, 2, 3), A.first);
+        assertNotEquals(IntList.of(1, 2, 3), A);
     }
 
     /** If you're running this from the command line, you'll need

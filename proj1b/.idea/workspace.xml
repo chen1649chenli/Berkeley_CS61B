@@ -36,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Palindrome.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Palindrome.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Palindrome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="289">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -88,7 +88,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestOffByOne.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestOffByOne.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestOffByOne.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
@@ -135,11 +135,11 @@
         <option value="$PROJECT_DIR$/LinkedListDeque.java" />
         <option value="$PROJECT_DIR$/ArrayDeque.java" />
         <option value="$PROJECT_DIR$/TestPalindrome.java" />
-        <option value="$PROJECT_DIR$/Palindrome.java" />
         <option value="$PROJECT_DIR$/OffByN.java" />
         <option value="$PROJECT_DIR$/OffByOne.java" />
         <option value="$PROJECT_DIR$/TestOffByN.java" />
         <option value="$PROJECT_DIR$/TestOffByOne.java" />
+        <option value="$PROJECT_DIR$/Palindrome.java" />
       </list>
     </option>
   </component>
@@ -323,14 +323,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542319987547</updated>
-      <workItem from="1542319988812" duration="13261000" />
+      <workItem from="1542319988812" duration="13334000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestPalindrome - 2018.11.16 at 22h 57m 05s.xml">
-      <configuration name="TestPalindrome" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestPalindrome - 2018.11.17 at 12h 47m 28s.xml">
       <configuration name="TestPalindrome" configurationId="JUnit" />
     </history-entry>
@@ -358,9 +355,12 @@
     <history-entry file="TestOffByOne - 2018.11.17 at 18h 33m 01s.xml">
       <configuration name="TestOffByOne" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestOffByOne - 2018.11.17 at 18h 38m 38s.xml">
+      <configuration name="TestOffByOne" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13261000" />
+    <option name="totallyTimeSpent" value="13334000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-54" y="54" width="2136" height="977" extended-state="0" />
@@ -458,13 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Palindrome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CharacterComparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -497,6 +490,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Palindrome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>

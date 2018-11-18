@@ -63,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OffByN.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OffByN.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OffByN.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
@@ -88,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestOffByOne.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestOffByOne.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestOffByOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="57" />
+            <state relative-caret-position="326">
+              <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,12 +134,12 @@
         <option value="$PROJECT_DIR$/PalindromeFinder.java" />
         <option value="$PROJECT_DIR$/LinkedListDeque.java" />
         <option value="$PROJECT_DIR$/ArrayDeque.java" />
-        <option value="$PROJECT_DIR$/TestOffByOne.java" />
         <option value="$PROJECT_DIR$/TestPalindrome.java" />
         <option value="$PROJECT_DIR$/Palindrome.java" />
         <option value="$PROJECT_DIR$/OffByN.java" />
         <option value="$PROJECT_DIR$/OffByOne.java" />
         <option value="$PROJECT_DIR$/TestOffByN.java" />
+        <option value="$PROJECT_DIR$/TestOffByOne.java" />
       </list>
     </option>
   </component>
@@ -153,8 +153,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="81" />
-    <option name="y" value="61" />
+    <option name="x" value="-54" />
+    <option name="y" value="54" />
     <option name="width" value="2136" />
     <option name="height" value="977" />
   </component>
@@ -200,7 +200,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestOffByN">
+  <component name="RunManager" selected="JUnit.TestOffByOne">
     <configuration name="PalindromeFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PalindromeFinder" />
       <module name="proj1b" />
@@ -306,9 +306,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestOffByOne" />
         <item itemvalue="JUnit.TestOffByN" />
         <item itemvalue="JUnit.TestPalindrome" />
-        <item itemvalue="JUnit.TestOffByOne" />
         <item itemvalue="Application.PalindromeFinder" />
       </list>
     </recent_temporary>
@@ -323,7 +323,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542319987547</updated>
-      <workItem from="1542319988812" duration="12414000" />
+      <workItem from="1542319988812" duration="12969000" />
     </task>
     <servers />
   </component>
@@ -360,10 +360,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12414000" />
+    <option name="totallyTimeSpent" value="12969000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="81" y="61" width="2136" height="977" extended-state="0" />
+    <frame x="-54" y="54" width="2136" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -375,13 +375,13 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32954547" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Style Checker" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24976122" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24976122" />
       <window_info anchor="right" id="Database" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -448,16 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestOffByOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestOffByN.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -500,6 +490,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TestOffByOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -517,7 +517,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>

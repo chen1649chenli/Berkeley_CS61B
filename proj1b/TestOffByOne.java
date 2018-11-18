@@ -22,5 +22,17 @@ public class TestOffByOne {
         Character a3 = '&';
         Character b3 = '%';
         assertTrue(offByOne.equalChars(a3, b3));
+
+        Character a4 = 'Z';
+        Character b4 = 'a';
+        assertFalse(offByOne.equalChars(a4, b4));
+
+        Character a5 = ' ';
+        Character b5 = '!';
+        assertTrue(offByOne.equalChars(a5, b5));
+
+        Character a6 = 'a';
+        Character b6 = 'z';
+        assertFalse(offByOne.equalChars(a6, b6));
     }
 }

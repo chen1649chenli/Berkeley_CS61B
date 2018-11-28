@@ -8,8 +8,9 @@ import static org.junit.Assert.*;
 
 public class TestArrayRingBuffer {
     @Test
-    public void someTest() {
-        //ArrayRingBuffer arb = new ArrayRingBuffer(10);
+    public void test1() {
+        ArrayRingBuffer arb = new ArrayRingBuffer(3);
+        assertEquals(3, arb.capacity);
     }
 
     /** Calls tests for ArrayRingBuffer. */

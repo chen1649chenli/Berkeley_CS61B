@@ -1,4 +1,5 @@
 package byog.lab5;
+import javafx.geometry.Pos;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -12,6 +13,7 @@ import java.util.Random;
  * Draws a world consisting of hexagonal regions.
  */
 public class HexWorld {
+    private static final Random RANDOM = new Random();
 
     /**
      * Adds a hexagon to the world.
@@ -83,6 +85,98 @@ public class HexWorld {
         } else {
           return ithRow + 1 - 2 * width;
         }
+    }
+
+    /**
+     * Generates random tile.
+     * @return
+     */
+    private static TETile randomTitle() {
+        int tileNum = RANDOM.nextInt(5);
+        switch(tileNum) {
+            case 0: return Tileset.FLOWER;
+            case 1: return Tileset.GRASS;
+            case 2: return Tileset.SAND;
+            case 3: return Tileset.TREE;
+            case 4: return Tileset.MOUNTAIN;
+            default: return Tileset.FLOWER;
+        }
+    }
+
+    /**
+     * Generates the width and height of the world.
+     * @param s The size of the hex, which is the 1st parameter of main() function
+     * @return
+     */
+    private static int[] worldSize(int s) {
+        int worldXAxis = 2 + 2 * s + 3 * (3 * s - 2) ;
+        int worldYAxis = 2 * s * 5;
+        int[] dim = new int[2];
+        dim[0] = worldXAxis;
+        dim[1] = worldYAxis;
+        return dim;
+    }
+
+    /**
+     * Generates the coordinates of the 19 hexagons in the world.
+     * @param s The size of the hex, which is the 1st parameter of main() function
+     * @return
+     */
+    private static Position[] hexP(int s) {
+        Position[] p = new Position[19];
+        /** hexagon in first column */
+        p[0] = new Position(s,2 * s);
+        p[1] = new Position(s,4 * s);
+        p[2] = new Position(s,6 * s);
+        /** hexagon in second column */
+        p[3] = new Position(3 * s - 1,1 * s);
+        p[4] = new Position(3 * s - 1,3 * s);
+        p[5] = new Position(3 * s - 1,5 * s);
+        p[6] = new Position(3 * s - 1,7 * s);
+        /** hexagon in third column */
+        p[7] = new Position(5 * s - 2,0);
+        p[8] = new Position(5 * s - 2,2 * s);
+        p[9] = new Position(5 * s - 2,4 * s);
+        p[10] = new Position(5 * s - 2,6 * s);
+        p[11] = new Position(5 * s - 2,8 * s);
+        /** hexagon in fourth column */
+        p[12] = new Position(7 * s - 3,1 * s);
+        p[13] = new Position(7 * s - 3,3 * s);
+        p[14] = new Position(7 * s - 3,5 * s);
+        p[15] = new Position(7 * s - 3,7 * s);
+        /** hexagon in the fifth column */
+        p[16] = new Position(9 * s - 4,2 * s);
+        p[17] = new Position(9 * s - 4,4 * s);
+        p[18] = new Position(9 * s - 4,6 * s);
+        return p;
+    }
+
+    public static void main(String[] args) {
+        /** Creates the world. */
+        int s = Integer.parseInt(args[0]);
+        int[] size = worldSize(s);
+        int width = size[0];
+        int height = size[1];
+        TERenderer render = new TERenderer();
+        render.initialize(width, height);
+
+        // initialize tiles
+        TETile[][] world = new TETile[width][height];
+        for (int x = 0; x < width; x += 1) {
+            for (int y = 0; y < height; y += 1) {
+                world[x][y] = Tileset.NOTHING;
+            }
+        }
+        /** Generates the position of the 19 hexagons.*/
+        Position[] p = hexP(s);
+
+        /** Adds the hexagons */
+        for (int i =  0; i < 19; i++) {
+            TETile t = randomTitle();
+            addHexagon(world,p[i], s, t);
+        }
+
+        render.renderFrame(world);
     }
 
     @Test

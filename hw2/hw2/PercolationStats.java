@@ -4,7 +4,7 @@ import edu.princeton.cs.introcs.StdRandom;
 import edu.princeton.cs.introcs.StdStats;
 
 public class PercolationStats {
-    private double[] results;
+    public double[] results;
     private int T;
 
 
@@ -50,6 +50,6 @@ public class PercolationStats {
             int col = StdRandom.uniform(N);
             grid.open(row, col);
         }
-        return grid.numberOfOpenSites() / (N * N);
+        return (double) grid.numberOfOpenSites() / (N * N);
     }
 }

@@ -36,4 +36,18 @@ public class TestPercolation {
 
     }
 
+    @Test
+    public void testPercolates2() {
+        Percolation grid3 = new Percolation(4);
+        grid3.open(0,1);
+        grid3.open(1,1);
+        grid3.open(2,1);
+        grid3.open(3,1);
+        Assert.assertTrue(grid3.percolates());
+        grid3.open(3,3);
+        grid3.open(2,3);
+        Assert.assertFalse(grid3.isFull(2,3));
+
+    }
+
 }

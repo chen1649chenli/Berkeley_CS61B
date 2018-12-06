@@ -1,16 +1,14 @@
 package hw2;
 
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
-import org.junit.Test;
-import org.junit.Assert;
 
 public class Percolation {
     private boolean[][] gridOpenStatus;
-    private boolean[] gridFullStatus;
     private int openSite;
     private int edgeSize;
-    private WeightedQuickUnionUF sets;
-    private boolean isPercolate;
+    private WeightedQuickUnionUF sets; //One virtual node is used for isFull()
+    private WeightedQuickUnionUF sets2; //Two virtual nodes are used for percolate()
+
 
     /**
      * Constructs the Percolation class
@@ -27,49 +25,47 @@ public class Percolation {
                 gridOpenStatus[i][j] = false;
             }
         }
-        gridFullStatus = new boolean[N * N];
-        for (int i = 0; i < N * N; i += 1) {
-            gridFullStatus[i] = false;
-        }
-
         openSite = 0;
-        sets = new WeightedQuickUnionUF(N * N);
-        isPercolate = false;
+        sets = new WeightedQuickUnionUF(N * N + 1);
+        sets2 = new WeightedQuickUnionUF(N * N + 2);
     }
 
     public void open(int row, int col) {
+        if(isOpen(row, col)) {
+            return;
+        }
         if (row >= edgeSize || col >= edgeSize ||
                 row < 0 ||col < 0) {
             throw new IndexOutOfBoundsException("Illegal coordinate");
         }
         gridOpenStatus[row][col] = true;
         openSite += 1;
-        if (row == 0) {
-            int pos = posConvert(row, col);
-            gridFullStatus[pos] = true;
-        }
         int pos = posConvert(row, col);
+        if (row == 0) {
+            sets.union(pos, edgeSize * edgeSize);
+            sets2.union(pos, edgeSize * edgeSize);
+        }
+
+        if (row == edgeSize - 1) {
+            sets2.union(pos, edgeSize * edgeSize + 1);
+        }
+
         if (checkLeft(row, col)) {
             int posNeighbor = posConvert(row, col - 1);
-            updateFullStatus(pos, posNeighbor);
+            connectNeigbor(pos, posNeighbor);
         }
         if (checkRight(row, col)) {
             int posNeighbor = posConvert(row, col + 1);
-            updateFullStatus(pos, posNeighbor);
+            connectNeigbor(pos, posNeighbor);
         }
         if (checkTop(row, col)) {
             int posNeighbor = posConvert(row - 1, col);
-            updateFullStatus(pos, posNeighbor);
+            connectNeigbor(pos, posNeighbor);
         }
         if (checkBottom(row, col)) {
             int posNeighbor = posConvert(row + 1, col);
-            updateFullStatus(pos, posNeighbor);
+            connectNeigbor(pos, posNeighbor);
         }
-
-        if (row == edgeSize - 1 && isFull(row, col) == true) {
-            isPercolate = true;
-        }
-
     }
 
     public boolean isOpen(int row, int col) {
@@ -86,8 +82,7 @@ public class Percolation {
             throw new IndexOutOfBoundsException("Illegal coordinate");
         }
         int pos = posConvert(row, col);
-        int root = sets.find(pos);
-        return gridFullStatus[root];
+        return sets.connected(pos, edgeSize * edgeSize);
     }
 
     public int numberOfOpenSites() {
@@ -95,7 +90,7 @@ public class Percolation {
     }
 
     public boolean percolates() {
-        return isPercolate;
+        return sets2.connected(edgeSize * edgeSize, edgeSize * edgeSize + 1);
     }
 
     private boolean checkLeft(int row, int col) {
@@ -126,21 +121,17 @@ public class Percolation {
         return false;
     }
 
-    private void updateFullStatus(int pos1, int pos2) {
-        int rootPos1 = sets.find(pos1);
-        int rootPos2 = sets.find(pos2);
-        if (gridFullStatus[pos1] || gridFullStatus[pos2] ||
-                gridFullStatus[rootPos1] || gridFullStatus[rootPos2]) {
-            sets.union(pos1, pos2);
-            int newRootPos = sets.find(pos1);
-            gridFullStatus[newRootPos] = true;
-        } else {
-            sets.union(pos1, pos2);
-        }
+    private void connectNeigbor(int pos1, int pos2) {
+        sets.union(pos1, pos2);
+        sets2.union(pos1, pos2);
     }
 
     private int posConvert(int row, int col) {
         return row * edgeSize + col;
+    }
+
+    public static void main(String[] args){
+
     }
 
 

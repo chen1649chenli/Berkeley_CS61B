@@ -60,15 +60,32 @@ public class MyHashMap<K, V> implements Map61B<K, V> {
     /* Associates the specified value with the specified key in this map. */
     @Override
     public void put(K key, V value) {
-        if (key == null) {
-            throw new IllegalArgumentException("key is null.");
-        }
         int index = hash(key);
         if (buckets[index].containsKey(key)) {
             buckets[index].put(key, value);
         } else {
             buckets[index].put(key, value);
             size += 1;
+            if (loadFactor()> MAX_LF) {
+                rehashing();
+            }
+        }
+    }
+
+    private void rehashing(){
+        ArrayMap<K, V>[] placeholder = buckets;
+        this.buckets = new ArrayMap[placeholder.length * 2];
+        for (int i = 0; i < this.buckets.length ; i += 1) {
+            this.buckets[i] = new ArrayMap<>();
+        }
+        for (int j = 0; j < placeholder.length; j += 1) {
+            Set<K> keyset = placeholder[j].keySet();
+            for (int n = 0; n < keyset.size(); n += 1) {
+                for (K k : keyset){
+                    int index = hash(k);
+                    this.buckets[index].put(k,placeholder[j].get(k));
+                }
+            }
         }
     }
 

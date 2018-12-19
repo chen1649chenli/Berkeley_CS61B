@@ -14,8 +14,22 @@ public class SimpleOomage implements Oomage {
 
     @Override
     public boolean equals(Object o) {
-        // TODO: Write this method.
-        return false;
+        // Done: Write this method.
+        if (o == this) {
+            return true;
+        }
+        if (o == null) {
+            return false;
+        }
+        if (o.getClass() != this.getClass()) {
+            return false;
+        }
+        SimpleOomage that = (SimpleOomage) o;
+        if (this.red == that.red && this.green == that.green && this.blue == that.blue) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /* Uncomment this method after you've written
@@ -58,7 +72,7 @@ public class SimpleOomage implements Oomage {
 
     public static void main(String[] args) {
         System.out.println("Drawing 4 random simple Oomages.");
-        randomSimpleOomage().draw(0.25, 0.25, 1);
+        randomSimpleOomage().draw(0.25, 0.25, 2);
         randomSimpleOomage().draw(0.75, 0.75, 1);
         randomSimpleOomage().draw(0.25, 0.75, 1);
         randomSimpleOomage().draw(0.75, 0.25, 1);

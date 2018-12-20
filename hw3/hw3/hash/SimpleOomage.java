@@ -10,11 +10,11 @@ public class SimpleOomage implements Oomage {
     protected int blue;
 
     private static final double WIDTH = 0.01;
-    private static final boolean USE_PERFECT_HASH = false;
+    private static final boolean USE_PERFECT_HASH = true;
 
     @Override
     public boolean equals(Object o) {
-        // Done: Write this method.
+        // Todo: Write this method.
         if (o == this) {
             return true;
         }
@@ -36,10 +36,10 @@ public class SimpleOomage implements Oomage {
     @Override
     public int hashCode() {
         if (!USE_PERFECT_HASH) {
-            return red + green + blue;
+            return this.red + this.green + this.blue;
         } else {
             // TODO: Write a perfect hash function for Simple Oomages.
-            return 0;
+            return this.red * 1000000 + this.green * 1000 + this.blue;
         }
     }
 

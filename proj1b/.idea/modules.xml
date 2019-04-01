@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Map61B/Map61B.iml" filepath="$PROJECT_DIR$/Map61B/Map61B.iml" />
       <module fileurl="file://$PROJECT_DIR$/proj1b.iml" filepath="$PROJECT_DIR$/proj1b.iml" />
     </modules>
   </component>

@@ -113,7 +113,7 @@ public class ArrayHeap<T> implements ExtrinsicPQ<T> {
         if (parentNode == null || currentNode == null) {
             return;
         }
-        if (min(parentIndex, index)== parentIndex) {
+        if (min(parentIndex, index) == parentIndex) {
             return;
         } else {
             swap(parentIndex,index);

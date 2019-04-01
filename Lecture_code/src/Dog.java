@@ -23,7 +23,17 @@ public class Dog implements Comparable<Dog> {
         }
     }
 
+    private static class SizeComparator implements Comparator<Dog> {
+        public int compare(Dog a, Dog b) {
+            return a.size - b.size;
+        }
+    }
+
     public static Comparator<Dog> getNameComparator() {
         return new NameComparator();
+    }
+
+    public static Comparator<Dog> getSizeComparator() {
+        return new SizeComparator();
     }
 }

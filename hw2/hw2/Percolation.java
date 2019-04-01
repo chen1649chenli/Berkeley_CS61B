@@ -14,7 +14,7 @@ public class Percolation {
      * Constructs the Percolation class
      */
     public Percolation(int N) {
-        if ( N <= 0 ) {
+        if (N <= 0) {
             throw new IllegalArgumentException("Percolation size needs to " +
                     "be a positive integer!");
         }
